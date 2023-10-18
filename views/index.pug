@@ -1,0 +1,14 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  ul 
+    each val in messages
+      li
+        div
+          =val.user
+        div(class='date')
+          =val.added
+        div     
+          =val.text
