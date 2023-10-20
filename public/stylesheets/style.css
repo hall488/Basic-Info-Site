@@ -8,6 +8,7 @@ body {
   align-items: center;
   justify-content: center;
   height: 100vh;
+  width: 100vw;
 }
 
 a {
@@ -16,23 +17,27 @@ a {
 
 ul {
   margin: 0;
-  padding: 5px;
+  padding: 15px;
   display: flex;
   flex-direction: column;
   gap: 8px;
   overflow-y: auto;
   border: 1px solid;
+  width: calc(100% - 50px);
+  height: 50%;
 }
 
 li {
   padding: 5px;
   list-style-type: none;
-  width: fit-content;
+  width: calc(100%-10px);
   border: 1px solid black;
 }
 
 li>div {
   padding: 5px;
+  word-break: break-word;
+  text-wrap: wrap;
 }
 
 .date {
@@ -42,10 +47,14 @@ li>div {
 
 form {
   display: flex;
+  flex: 1;
   flex-direction: column;
-  width: 300px;
   padding: 20px;
+  height: 200px;
+  width: calc(100% - 40px);
 }
+
+
 
 #text {
   margin-top: 8px;
