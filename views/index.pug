@@ -9,6 +9,14 @@ block content
         div
           =val.user
         div(class='date')
-          =val.added
+          =val.date_formatted
         div     
           =val.text
+  form(action='/', method='POST')
+    label(for='user')
+    input(placeholder='Username' id='user' name='user')
+    label(for='text')
+    textarea(placeholder='Type a message!' id='text' name='text' rows="4" cols="50")
+    button
+        |Submit
+  script(src='/javascripts/pin.js', defer)
