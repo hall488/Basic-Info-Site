@@ -14,9 +14,9 @@ block content
           =val.text
   form(action='/', method='POST')
     label(for='user')
-    input(placeholder='Username' id='user' name='user')
+    input(placeholder='Username' id='user' name='user' minlength="1" maxlength="25")
     label(for='text')
-    textarea(placeholder='Type a message!' id='text' name='text' rows="4" cols="50")
+    textarea(placeholder='Type a message!' id='text' name='text' rows="4" cols="50" minlength="1" maxlength="255")
     button
         |Submit
   script(src='/javascripts/pin.js', defer)

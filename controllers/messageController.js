@@ -22,6 +22,8 @@ exports.sendMessage = [
     // Extract the validation errors from a request.
     const errors = validationResult(req);
 
+    console.log(errors);
+
     // Create a genre object with escaped and trimmed data.
     const message = new Message({
       user: req.body.user,
@@ -31,10 +33,12 @@ exports.sendMessage = [
 
     if (!errors.isEmpty()) {
       // There are errors. Render the form again with sanitized values/error messages.
-      res.render("index", {
-        title: "Messages",
-        errors: errors.array(),
-      });
+      // res.render("index", {
+      //   title: "Messages",
+      //   errors: errors.array(),
+      // });
+      // return;
+      res.redirect("/");
       return;
     } else {
       // Data from form is valid.
