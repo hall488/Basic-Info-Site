@@ -9,6 +9,7 @@ body {
   justify-content: center;
   height: 100vh;
   width: 100vw;
+  background-color: whitesmoke;
 }
 
 a {
@@ -52,11 +53,7 @@ form {
   padding: 20px;
   height: 200px;
   width: calc(100% - 40px);
+  gap: 4px;
 }
 
-
-
-#text {
-  margin-top: 8px;
-  margin-bottom: 8px;
-}
+#text {}

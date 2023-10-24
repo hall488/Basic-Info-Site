@@ -28,6 +28,7 @@ exports.sendMessage = [
     const message = new Message({
       user: req.body.user,
       text: req.body.text,
+      color: req.body.color,
       date: new Date(),
     });
 
